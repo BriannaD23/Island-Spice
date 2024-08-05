@@ -1,0 +1,553 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  zoom: 1;
+}
+
+/*------------------------------------------Header---------------------------*/
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 4.4rem;
+  background-color: rgb(33, 33, 32);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-pic {
+  height: 3.4rem;
+  margin-left: 1.4rem;
+}
+
+#menu-icon {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+.navbar li {
+  padding: 0 1.3rem;
+}
+
+.navbar a {
+  color: white;
+  font-family: "Jorgey", sans-serif;
+}
+.nav-list-mobile {
+  display: none;
+}
+
+.order-now button {
+  display: inline-block;
+  padding: 14px 26px;
+  background: rgb(226, 88, 34);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5rem;
+  transition: all 0.4s ease;
+  margin-right: 2rem;
+  font-family: "Jorgey", sans-serif;
+}
+
+/*----------------------------------First-Section-------------------------- */
+
+.hero {
+  padding: 50px 6% 80px;
+  background-image: url(https://i.postimg.cc/wj0L3Hdy/black-wood.webp);
+  background-image: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  margin-top: 4.4rem;
+  height: 38rem;
+}
+
+.ribs {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-text h1 {
+  font-size: 3.7rem;
+  font-family: "Jorgey", sans-serif;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  color: rgb(252, 252, 252);
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+  line-height: 32px;
+  margin-bottom: 2.3rem;
+}
+
+.btn-craving {
+  display: inline-block;
+  padding: 14px 26px;
+  background: rgb(240, 79, 16);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Jorgey", sans-serif;
+  transition: all 0.4s ease;
+}
+
+.btn-craving:hover {
+  letter-spacing: 1px;
+}
+/* .home {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-image: url(https://i.postimg.cc/wj0L3Hdy/black-wood.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+/*---------------------------------------Ingredients---------------------------------------*/
+.container {
+  display: flex;
+}
+
+.ingredients {
+  height: 15rem;
+  background-color: rgb(245, 196, 60);
+  font-size: 2rem;
+  padding-right: 40px;
+  padding-top: 40px;
+  padding-left: 25px;
+  padding-bottom: 80px;
+}
+
+.ingredients-text p {
+  font-family: "Jorgey", sans-serif;
+  font-size: 3rem;
+}
+
+.c-mainbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.container-img img {
+  height: 8rem;
+}
+
+.container-box {
+  display: flex;
+  padding-left: 30px;
+  text-align: center;
+}
+
+.text {
+  font-family: "Jorgey", sans-serif;
+  text-align: center;
+}
+
+/*---------------------------------------Specials---------------------------------------*/
+
+.specials {
+  padding: 4rem;
+  background-image: url(https://lovesomejerk.com/revslider-standalone/media/6256a-wallpaper.wiki-Free-HD-Chalkboard-Photos-PIC-WPD006400.jpg);
+  text-align: center;
+}
+
+.specials h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-family: "Jorgey", sans-serif;
+}
+
+.specials-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.special-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+  width: 250px;
+}
+
+.special-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.special-item h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  font-family: "Jorgey", sans-serif;
+}
+
+.special-item p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0.5rem 0;
+  font-family: "Okashi", sans-serif;
+}
+
+.special-item span {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: rgb(240, 79, 16);
+  font-family: "Okashi", sans-serif;
+}
+
+/*---------------------------------------Specials---------------------------------------*/
+
+/*---------------------------------------Testimonials---------------------------------------*/
+
+#Reviews {
+  padding: 6rem;
+  background-color: #f9f9f9;
+  text-align: center;
+  height: 35rem;
+  font-family: "Jorgey", sans-serif;
+}
+
+#Reviews h2 {
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.testimonial-container {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 0.5rem 2rem;
+  padding: 1rem 6rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+}
+
+blockquote {
+  margin: 0;
+  font-style: italic;
+  font-family: "Okashi", sans-serif;
+}
+
+blockquote img {
+  height: 9rem;
+}
+
+cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+/*---------------------------------------Testimonials---------------------------------------*/
+
+/*---------------------------------------Contact-Form---------------------------------------*/
+
+.contact-form {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: black;
+}
+
+.contact-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/*---------------------------------------Contact-Form---------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------Menu.HTML---------------------------------------*/
+
+.menu-hero {
+  background-image: url(https://i.postimg.cc/wj0L3Hdy/black-wood.webp);
+  background-image: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5%;
+  margin-top: 4.4rem;
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.menu-hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 6.4rem;
+  z-index: 1;
+  font-family: "Jorgey", sans-serif;
+}
+
+.menu-container {
+  height: 17rem;
+  width: 30rem;
+  background-color: rgba(85, 85, 85, 0.7);
+  opacity: 1;
+  position: absolute;
+  border-radius: 10%;
+}
+
+.menu-hero-image {
+  height: 47rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.entree-header {
+  text-align: center;
+  font-family: "Jorgey", sans-serif;
+  padding-top: 5rem;
+  font-size: 2.3rem;
+  color: rgb(240, 79, 16);
+}
+.entree-items-container {
+  height: 64rem;
+}
+
+.entree-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 4rem;
+}
+
+.menu-items img {
+  height: 13rem;
+}
+
+/* ----------------------------------------Patties----------------------------------------------- */
+
+.patties-items-container {
+  height: 60rem;
+}
+
+.pattie-header {
+  text-align: center;
+  font-family: "Jorgey", sans-serif;
+  padding-top: 5rem;
+  font-size: 2.3rem;
+  color: rgb(240, 79, 16);
+}
+
+.pattie-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 4rem;
+}
+
+/* ----------------------------------------Table Data------------------------------------------------------ */
+.meal-info {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+.meal-header{
+    text-align: center;
+    font-family: "Jorgey", sans-serif;
+    padding:3rem 0;
+    font-size: 2rem;
+    color: rgb(240, 79, 16);
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* ----------------------------------------Table Data------------------------------------------------------ */
+
+/* ----------------------------------------Reservation.HTML------------------------------------------------------ */
+
+.reservation-container{
+    height: 50rem;
+    background-image: url(https://i.postimg.cc/wj0L3Hdy/black-wood.webp);
+    background-image: no-repeat;
+    background-size: cover
+}
+
+.reservation-form {
+    display: flex;
+    justify-content: center;
+;
+    align-items: center;
+    padding: 20px;
+    margin: 4.4rem auto 20px; 
+    max-width: 600px;
+}
+
+.container-2 {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.container-2 h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color:  rgb(240, 79, 16);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* ----------------------------------------Reservation.HTML------------------------------------------------------ */

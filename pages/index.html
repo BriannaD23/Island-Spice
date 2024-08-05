@@ -1,34 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css">
-    <title> Island Spice</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link href="https://fonts.cdnfonts.com/css/jorgey" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/okashi" rel="stylesheet" />
+
+    <title>Island Spice</title>
+  </head>
+  <body>
     <header>
-        <a href="" class="logo"><img src="" alt=""></a>
+      <a href="#Home" class="logo"
+        ><img class="logo-pic" src="../images/spice-logo.png"
+      /></a>
 
-        <ul class="navbar nav-link-hidden">
-           <li><a href="">Home</a></li>
-           <li><a href="">About</a></li>
-           <li><a href="">Our Menu</a></li>
-           <li><a href="">Catering</a></li>
-           <li><a href="">Reviews</a></li>
-         
-           <a href=""></a>
-        </ul>
+      <ul class="navbar nav-link-hidden">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Our Menu</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="#Reviews">Reviews</a></li>
+      </ul>
 
+      <div class="bx bx-menu" id="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
 
-        </div>
-
+      <div class="order-now">
+        <button>Order Now!</button>
+      </div>
     </header>
 
+    <section class="hero" id="Home">
+      <div class="hero-text">
+        <h1>
+          <span>Island Spice:</span><br />
+          Where Jamaican Tradition Meets Modern Flavor
+        </h1>
 
+        <a href="#" class="btn-craving"> Choose Your Craving! </a>
+      </div>
 
+      <div class="hero-img">
+        <img class="ribs" src="../images/ribs.png" alt="home-img" />
+      </div>
+    </section>
 
+    <section class="container">
+      <div class="ingredients">
+        <div class="ingredients-text">
+          <p>Savor</p>
+          <p>The</p>
+          <p>Goodness</p>
+        </div>
+      </div>
+      <div class="container-box">
+        <div class="c-mainbox">
+          <div class="container-img">
+            <img src="../images/scallion.png" alt="box1" />
+          </div>
+          <div class="container text">
+            <p>Scallion</p>
+          </div>
+        </div>
+        <div class="c-mainbox">
+          <div class="container-img">
+            <img src="../images/curry.png" alt="'box2" />
+          </div>
+          <div class="container text">
+            <p>Curry Powder</p>
+          </div>
+        </div>
 
-    <script src="https://kit.fontawesome.com/fc84bd7ef1.js" crossorigin="anonymous"></script>
-</body>
+        <div class="c-mainbox">
+          <div class="container-img">
+            <img src="../images/ginger.png" alt="'box3" />
+          </div>
+          <div class="container text">
+            <p>Ginger</p>
+          </div>
+        </div>
+
+        <div class="c-mainbox">
+          <div class="container-img">
+            <img src="../images/scotch-bonnet.png" alt="'box4" />
+          </div>
+          <div class="container text">
+            <p>Scotch Bonnet</p>
+          </div>
+        </div>
+
+        <div class="c-mainbox">
+          <div class="container-img">
+            <img src="../images/pimento.png" alt="'box4" />
+          </div>
+          <div class="container text">
+            <p>Pimento Seeds</p>
+          </div>
+        </div>
+
+        <div class="c-mainbox">
+          <div class="container-img">
+            <img src="../images/onion.png" alt="'box4" />
+          </div>
+          <div class="container text">
+            <p>Onions</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="specials">
+      <h2>Specials</h2>
+      <div class="specials-grid">
+        <div class="special-item">
+          <img
+            class="special-images"
+            src="../images/jerkchicken.png"
+            alt="Special Dish 2"
+          />
+          <h3>Jerk Chicken</h3>
+          <p>
+            Traditional Jamaican dish with ackee fruit and salted cod, served
+            with plantains.
+          </p>
+          <span>$14.99</span>
+        </div>
+        <div class="special-item">
+          <img
+            class="special-images"
+            src="../images/jerk-fried-chicken.png"
+            alt="Special Dish 3"
+          />
+          <h3>Jerk Fried Chicken</h3>
+          <p>
+            Flaky pastry filled with seasoned ground beef, perfect for a quick
+            snack.
+          </p>
+          <span>$16.99</span>
+        </div>
+        <div class="special-item">
+          <img
+            class="special-images"
+            src="../images/ribs.png"
+            alt="Special Dish 1"
+          />
+          <h3>Spicy Jerk Ribs</h3>
+          <p>
+            A spicy and flavorful Jamaican classic, served with rice and peas.
+          </p>
+          <span>$12.99</span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <section id="Reviews">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-container">
+          <div class="testimonial">
+            <blockquote>
+              <img src="../images/image-37.png" />
+              <p>
+                "The service was fantastic! I loved the authentic Jamaican
+                flavors."
+              </p>
+            </blockquote>
+            <cite>- Jane Doe, Kingston</cite>
+          </div>
+          <div class="testimonial">
+            <blockquote>
+              <img src="../images/image-87.png" />
+              <p>"A wonderful experience, I felt like I was in Jamaica."</p>
+            </blockquote>
+            <cite>- John Smith, Montego Bay</cite>
+          </div>
+          <div class="testimonial">
+            <blockquote>
+              <img src="../images/image-35.png" />
+              <p>"A wonderful experience, I felt like I was in Jamaica."</p>
+            </blockquote>
+            <cite>- John Smith, Montego Bay</cite>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="contact-form">
+      <div class="contact-container">
+          <h2>Contact Us</h2>
+          <form action="/submit-contact" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+              
+              <button type="submit">Send Message</button>
+          </form>
+      </div>
+  </section>
+
+    <script
+      src="https://kit.fontawesome.com/fc84bd7ef1.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
