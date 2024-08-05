@@ -10,16 +10,18 @@
 
 <p> To achieve a visually appealing look, I brainstormed and found some colors that I though went good together. I applied Flexbox to add some responsiveness. Additionally, CSS animations were used to add dynamic effects to the user interface.
 
-<h2 style="text-align: center;" > Challenges<h2>
+<h2 style="text-align: center;" > Challenges</h2>
 
-<p>One of the biggest challenges I faced in this assignment was incorporating the required elements while preserving my creative vision. I aimed to keep the design simple and functional, but I found myself in a creative flow, which led me to explore various design possibilities. Balancing the need to meet specific requirements with my desire to innovate was a key focus. Additionally, I had to ensure that all components integrated seamlessly and flowed naturally within the overall layout of the site.</p>
+<p>One of the biggest challenges I faced in this assignment was incorporating the required elements while preserving my creative vision. I aimed to keep the design simple and functional, but I found myself in a creative flow, which led me to explore various design possibilities.</p>
+
+<p> Balancing the need to meet specific requirements with my desire to innovate was a key focus. Additionally, I had to ensure that all components integrated seamlessly and flowed naturally within the overall layout of the site.</p>
 
 <h2 style="text-align: center;" >Wireframes </h2 >
 
 <p>To guide the design process, I created a wireframe using Noteful, which helped in visualizing the layout and organizing content before diving into development.</p>
 
 <div style="text-align: center;">
-    <img src="../images/wireframe1.jpeg" alt="Wireframe 1" style="display: inline-block; margin: 10px;">
-    <img src="../images/wireframe2.jpeg" alt="Wireframe 2" style="display: inline-block; margin: 10px;">
-    <img src="../images/wireframe3.jpeg" alt="Wireframe 3" style="display: inline-block; margin: 10px;">
+    <img src="wireframe1.jpeg" alt="Wireframe 1" style="display: inline-block; margin: 10px;">
+    <img src="wireframe2.jpeg" alt="Wireframe 2" style="display: inline-block; margin: 10px;">
+    <img src="wireframe3.jpeg" alt="Wireframe 3" style="display: inline-block; margin: 10px;">
 </div>
