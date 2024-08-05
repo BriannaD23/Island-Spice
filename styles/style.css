@@ -42,16 +42,55 @@ header {
   display: flex;
   position: sticky;
   top: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar li {
+  list-style: none;
   padding: 0 1.3rem;
+}
+
+@keyframes underlineAnimation {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
 }
 
 .navbar a {
   color: white;
   font-family: "Jorgey", sans-serif;
+  text-decoration: none;
+  position: relative;
+  padding: 10px 0;
+  transition: color 0.3s ease;
 }
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #e74c3c;
+  transition: width 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+  animation: underlineAnimation 0.3s forwards;
+}
+
+.navbar a:hover {
+  color: #e74c3c;
+}
+
 .nav-list-mobile {
   display: none;
 }
@@ -86,21 +125,27 @@ header {
 .ribs {
   width: 100%;
   height: 100%;
+  margin-top: 2rem;
 }
 
 .hero-text h1 {
   font-size: 3.7rem;
   font-family: "Jorgey", sans-serif;
   line-height: 1.2;
-  margin-bottom: 2rem;
-  color: rgb(252, 252, 252);
+  color: rgb(240, 79, 16);
+}
+
+.hero-text h1 span {
+  /* color: rgb(101,157,65); */
+  color: rgb(245, 196, 60);
 }
 
 .hero-text p {
-  font-size: 1.1rem;
+  font-size: 3rem;
   font-weight: 500;
   color: white;
-  line-height: 32px;
+  font-family: "Okashi", sans-serif;
+
   margin-bottom: 2.3rem;
 }
 
@@ -130,6 +175,8 @@ header {
     background-size: cover;
 } */
 
+/* don't delete yet may still be helpful */
+
 /*---------------------------------------Ingredients---------------------------------------*/
 .container {
   display: flex;
@@ -150,13 +197,25 @@ header {
   font-size: 3rem;
 }
 
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .c-mainbox {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px 10px;
+  padding: 20px 15px;
   overflow: hidden;
+  animation: slideIn 2s ease-out;
 }
 
 .container-img img {
@@ -253,6 +312,16 @@ header {
   display: flex;
   align-items: center;
 }
+@keyframes hoverEffect {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+}
 
 .testimonial {
   background-color: #fff;
@@ -263,6 +332,11 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   max-width: 600px;
   width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonial:hover {
+  animation: hoverEffect 0.3s ease-in-out forwards;
 }
 
 blockquote {
@@ -279,82 +353,126 @@ cite {
   display: block;
   margin-top: 0.5rem;
   font-weight: bold;
-  color: #555;
+  color: rgb(240, 79, 16);
 }
 
 /*---------------------------------------Testimonials---------------------------------------*/
 
 /*---------------------------------------Contact-Form---------------------------------------*/
 
+.contact-main-container {
+  padding-top: 4.4rem;
+  height: auto;
+  background-color: #ccc;
+  padding: 3rem 17rem;
+}
+
 .contact-form {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 600px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: black;
+  padding: 20px;
+  border: 1px solid #fff6f6;
+  border-radius: 8px;
+  background-color: rgb(23, 23, 23);
+  opacity: 0.77;
 }
 
 .contact-container h2 {
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-    color: #333;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 1.8rem;
+  color: white;
+  font-family: "Jorgey", sans-serif;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #555;
+  margin: 7px 0;
+  font-weight: bold;
+  color: #555;
+  font-size: 0.75rem;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
 }
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(240, 79, 16);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+  background-color: rgb(255, 112, 60);
 }
-
 
 /*---------------------------------------Contact-Form---------------------------------------*/
 
+/*---------------------------------------About.HTML---------------------------------------*/
 
+.giphy-embed {
+  pointer-events: none;
+  box-sizing: border-box;
+}
 
+.about-section {
+  padding: 6rem 3rem;
+  min-height: 56rem;
+  display: flex;
+  background-image: url(https://lovesomejerk.com/revslider-standalone/media/6256a-wallpaper.wiki-Free-HD-Chalkboard-Photos-PIC-WPD006400.jpg);
+  gap: 20px;
+  background-image: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
 
+iframe,
+.about-text p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+iframe {
+  border-radius: 15%;
+  border: 5px solid black;
+}
 
+.about-text {
+  flex: 1;
+  text-align: center;
+  color: #ccc;
+  box-sizing: border-box;
+  padding-left: 40px;
+}
 
+.about-text h1 {
+  font-family: "Jorgey", sans-serif;
+}
 
+.about-text p {
+  font-family: "Okashi", sans-serif;
+}
 
-
-
-
+/*---------------------------------------About.HTML---------------------------------------*/
 
 /*---------------------------------------Menu.HTML---------------------------------------*/
 
@@ -447,107 +565,107 @@ button:hover {
 
 /* ----------------------------------------Table Data------------------------------------------------------ */
 .meal-info {
-    padding: 20px;
-    margin: 20px 0;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
 }
-.meal-header{
-    text-align: center;
-    font-family: "Jorgey", sans-serif;
-    padding:3rem 0;
-    font-size: 2rem;
-    color: rgb(240, 79, 16);
-
+.meal-header {
+  text-align: center;
+  font-family: "Jorgey", sans-serif;
+  padding: 3rem 0;
+  font-size: 2rem;
+  color: rgb(240, 79, 16);
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
 
 th {
-    background-color: #f4f4f4;
-    font-weight: bold;
+  background-color: #f4f4f4;
+  font-weight: bold;
 }
 
 tr:nth-child(even) {
-    background-color: #f9f9f9;
+  background-color: #f9f9f9;
 }
 
 tr:hover {
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
 
 /* ----------------------------------------Table Data------------------------------------------------------ */
 
 /* ----------------------------------------Reservation.HTML------------------------------------------------------ */
 
-.reservation-container{
-    height: 50rem;
-    background-image: url(https://i.postimg.cc/wj0L3Hdy/black-wood.webp);
-    background-image: no-repeat;
-    background-size: cover
+.reservation-container {
+  height: 50rem;
+  background-image: url(https://i.postimg.cc/wj0L3Hdy/black-wood.webp);
+  background-image: no-repeat;
+  background-size: cover;
 }
 
 .reservation-form {
-    display: flex;
-    justify-content: center;
-;
-    align-items: center;
-    padding: 20px;
-    margin: 4.4rem auto 20px; 
-    max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 4.4rem auto 20px;
+  max-width: 600px;
 }
 
 .container-2 {
-    width: 100%;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
 }
 
 .container-2 h2 {
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-    color: #333;
-    text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+  font-family: "Jorgey", sans-serif;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #555;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+  font-family: "Jorgey", sans-serif;
 }
 
-
-
-button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    background-color:  rgb(240, 79, 16);
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.btn-submit {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(240, 79, 16);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 2rem;
 }
 
 button:hover {
-    background-color: #0056b3;
+  background-color: rgb(255, 112, 60);
 }
 
 /* ----------------------------------------Reservation.HTML------------------------------------------------------ */
