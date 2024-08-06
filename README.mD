@@ -22,8 +22,8 @@
 
 <h2>Sources</h2>
 
-<a href="https://lovesomejerk.com/index.php#premenu" target="_blank"></a><br>
-<a href="https://goldenkrust.com/menu/" target="_blank"></a>
+<a href="https://lovesomejerk.com/index.php#premenu" target="_blank">Lovesome Jerk Menu</a><br>
+<a href="https://goldenkrust.com/menu/" target="_blank">Golden Krust Menu</a>
 
 
 
