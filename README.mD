@@ -16,14 +16,9 @@
 
 <p> Balancing the need to meet specific requirements with my desire to innovate was a key focus. Additionally, I had to ensure that all components integrated seamlessly and flowed naturally within the overall layout of the site.</p>
 
-<h2 style="text-align: center;" >Wireframes </h2 >
+<h2 style="text-align: center;" >Wireframes</h2 >
 
 <p>To guide the design process, I created a wireframe using Noteful, which helped in visualizing the layout and organizing content before diving into development.</p>
-
-<h2>Sources</h2>
-
-<a href="https://lovesomejerk.com/index.php#premenu" target="_blank">Lovesome Jerk Menu</a><br>
-<a href="https://goldenkrust.com/menu/" target="_blank">Golden Krust Menu</a>
 
 
 
@@ -33,3 +28,7 @@
     <img src="wireframe3.jpeg" alt="Wireframe 3" style="display: inline-block; margin: 10px;">
 </div>
 
+<h2>Sources</h2>
+
+<a href="https://lovesomejerk.com/index.php#premenu" target="_blank">Lovesome Jerk Menu</a><br>
+<a href="https://goldenkrust.com/menu/" target="_blank">Golden Krust Menu</a>
