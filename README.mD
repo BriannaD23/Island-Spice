@@ -18,7 +18,7 @@
 
 <h2 style="text-align: center;" >Wireframes</h2 >
 
-<p>To guide the design process, I created a wireframe using Noteful, which helped in visualizing the layout and organizing content before diving into development.</p>
+<p>To guide the design process, I created a wireframe using the app Noteful, which helped in visualizing the layout and organizing content before diving into development.</p>
 
 
 
