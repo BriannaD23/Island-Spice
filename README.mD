@@ -20,13 +20,16 @@
 
 <p>To guide the design process, I created a wireframe using Noteful, which helped in visualizing the layout and organizing content before diving into development.</p>
 
+<h2>Sources</h2>
+
+<a href="https://lovesomejerk.com/index.php#premenu" target="_blank"></a><br>
+<a href="https://goldenkrust.com/menu/" target="_blank"></a>
+
+
+
 <div style="text-align: center;">
     <img src="wireframe1.jpeg" alt="Wireframe 1" style="display: inline-block; margin: 10px;">
     <img src="wireframe2.jpeg" alt="Wireframe 2" style="display: inline-block; margin: 10px;">
     <img src="wireframe3.jpeg" alt="Wireframe 3" style="display: inline-block; margin: 10px;">
 </div>
 
-<h2> Sources </h1>
-
-<a href= "https://lovesomejerk.com/index.php#premenu"></a>
-<a href= "https://goldenkrust.com/menu/"></a>
