@@ -25,3 +25,8 @@
     <img src="wireframe2.jpeg" alt="Wireframe 2" style="display: inline-block; margin: 10px;">
     <img src="wireframe3.jpeg" alt="Wireframe 3" style="display: inline-block; margin: 10px;">
 </div>
+
+<h2> Sources </h1>
+
+<a href= "https://lovesomejerk.com/index.php#premenu"></a>
+<a href= "https://goldenkrust.com/menu/"></a>
