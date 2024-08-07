@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf docs && mkdir docs && cp -r ./images/* ./docs && cp -rf ./styles/* ./docs && cp -r ./pages/* ./docs && git add . && git commit -m \"Deploy\" && git push"
+    "build": "rm -rf docs && mkdir docs && cp -r ./images/* ./docs && cp -rf ./styles/* ./docs && cp -r ./pages/* ./docs && ./change-pathing.sh docs && git add . && git commit -m \"Deploy\" && git push"
   },
   "keywords": [],
   "author": "",
