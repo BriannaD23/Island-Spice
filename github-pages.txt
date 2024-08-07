@@ -1,0 +1,14 @@
+Running: npm run build:github
+
+Github pages requires the build be in a certain directory, docs, or root.
+
+So github pages must be configured to use the docs directory before running the deployment.
+
+The script first removes the docs directory, and then rebuilds it with the new build.
+
+The new build first copies all the need files into the docs directory.
+
+Then process the text using gsed to adjust the pathing of the hrefs and srcs. to remove the ../images and ../styles
+
+Finally, the script runs the deployment to github pages.
+
