@@ -18,8 +18,8 @@ find "$BASE_DIR" -type f | while read -r file; do
     if ! [[ "$file" == *.html ]]; then
         continue
     fi
-    ./gsed -i 's|\.\./images||g' "$file"
-    ./gsed -i 's|\.\./styles||g' "$file"
+    ./gsed -i 's|\.\./images|Isaland-Spice|g' "$file"
+    ./gsed -i 's|\.\./styles|Island-Spice|g' "$file"
     echo "Processed $file"
 done
 
