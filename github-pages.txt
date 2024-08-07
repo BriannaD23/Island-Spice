@@ -1,4 +1,5 @@
 Running: npm run build:github
+** must have github pages activarted and configured.
 
 Github pages requires the build be in a certain directory, docs, or root.
 
