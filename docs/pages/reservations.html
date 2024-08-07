@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.cdnfonts.com/css/jorgey" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/okashi" rel="stylesheet" />
+    <title>Reservations</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img class="logo-pic" src="../images/spice-logo.png"></a> 
+
+        <ul class="navbar nav-link-hidden">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="menu.html">Our Menu</a></li>
+           <li><a href="reservations.html">Reservations</a></li>
+           <li><a href=" ">Reviews</a></li>
+        </ul>
+
+        <div class="bx bx-menu" id="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="order-now">
+            <button>Order Now!</button>
+        </div>
+
+       
+    </header>
+    <div class="reservation-container">
+        <section class="reservation-form">
+            <div class="container-2">
+                <h2>Make a Reservation</h2>
+                <form action="/submit-reservation" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <label for="date">Reservation Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    
+                    <label for="time">Reservation Time:</label>
+                    <input type="time" id="time" name="time" required>
+                    
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" name="guests" min="1" required>
+                    
+                    <label for="seating">Seating Preference:</label>
+                    <select id="seating" name="seating">
+                        <option value="indoor">Indoor</option>
+                        <option value="outdoor">Outdoor</option>
+                    </select>
+                    
+                    <button class="btn-submit"    type="submit">Book Table</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "island-spice",
+  "version": "1.0.0",
+  "description": "<h1 style=\"text-align: center;\">Island Spice website</h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf docs && mkdir docs && cp -r ./pages ./docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
