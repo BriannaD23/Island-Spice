@@ -1,6 +1,6 @@
 <h1 style="text-align: center;">Island Spice website</h1>
 
-<p>This website is for Island Spice, a restaurant specializing in Caribbean cuisine. The goal is to provide information about our menu, about, reservations, and more. Our target audience is local residents and tourists interested in authentic Caribbean flavors.</p> <br>
+<p>This website is for Island Spice, a restaurant specializing in Caribbean cuisine. The goal is to provide information about our menu, about, reservations, and more. Our target audience is local residents and tourists interested in authentic Caribbean flavors 🏝️.</p> <br>
 
 <h2 style="text-align: center;">Technical Requirements </h2>
 
