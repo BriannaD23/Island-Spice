@@ -12,14 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
   
     leftArrow.addEventListener('click', () => {
       containerBox.scrollBy({
-        left: -200, // Adjust this value to control the scroll amount
+        left: -200, 
         behavior: 'smooth'
       });
     });
   
     rightArrow.addEventListener('click', () => {
       containerBox.scrollBy({
-        left: 200, // Adjust this value to control the scroll amount
+        left: 200,
         behavior: 'smooth'
       });
     });
