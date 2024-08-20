@@ -763,6 +763,14 @@ button:hover {
     position: relative;
   }
 
+  .order-now button{
+    font-size: 15px;
+    margin-right: .6rem;
+  
+    padding: 14px 13px;
+
+  }
+
 
   iframe {
     width: 100%; 
@@ -807,6 +815,16 @@ button:hover {
 
   .patties-items-container{
     height: 90rem;
+  }
+
+
+
+  /* -------------------------------------Reseervations------------------------------------------- */
+
+
+  .reservation-container {
+    height:60rem;
+ 
   }
   
 
