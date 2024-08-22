@@ -1265,7 +1265,9 @@ button:hover {
     text-align: center;
     font-size: 13px;
   }
-
+  .testimonial-container{
+    gap: 3.2rem;
+  }
 
   .blockquote img {
     height: 3rem;
