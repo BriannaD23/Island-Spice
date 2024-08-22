@@ -928,10 +928,9 @@ button:hover {
     position: relative;
   }
   .order-now button{
-    font-size: 15px;
+    font-size: 12px;
     margin-right: .6rem;
-  
-    padding: 14px 13px;
+    padding: 12px 13px;
 
   }
 
