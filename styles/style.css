@@ -1112,7 +1112,8 @@ button:hover {
 
   .container-box-wrapper {
     position: relative;
-    width: 20%;
+    width: 10%;
+    max-width: 27rem;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -1186,6 +1187,5 @@ button:hover {
   }
 
 
- 
 
 }
