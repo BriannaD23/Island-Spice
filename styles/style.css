@@ -239,7 +239,13 @@ header {
   transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
   z-index: 1;
   scroll-snap-align: center; 
+  
 }
+
+.container-box::-webkit-scrollbar {
+  display: none; 
+}
+
 
 
 .c-mainbox:hover {
@@ -1174,7 +1180,7 @@ button:hover {
   .meal-info {
     padding: 10px;
     margin: 10px 0;
-    margin-bottom: px;
+    margin-bottom: 4rem;
   
   }
 
