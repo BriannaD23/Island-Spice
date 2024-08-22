@@ -183,7 +183,8 @@ header {
 
 .container-box-wrapper {
   position: relative;
-  width: 40%;
+  width: 100%;
+  max-width: 100%;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -195,6 +196,7 @@ header {
   align-items: center;
   scroll-behavior: smooth;
   overflow-x: auto;
+  scroll-snap-type: x mandatory;
  
 }
 
@@ -236,7 +238,9 @@ header {
   min-width: 200px;
   transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
   z-index: 1;
+  scroll-snap-align: center; 
 }
+
 
 .c-mainbox:hover {
   background-color: rgb(244, 244, 244);
@@ -1112,8 +1116,8 @@ button:hover {
 
   .container-box-wrapper {
     position: relative;
-    width: 10%;
-    max-width: 27rem;
+    width: 100%;
+    max-width: 100%;
     flex: 1;
     display: flex;
     justify-content: center;
