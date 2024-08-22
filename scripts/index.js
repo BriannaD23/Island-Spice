@@ -9,7 +9,7 @@ const containerBox = document.querySelector('.container-box');
 const leftArrow = document.querySelector('.left-arrow');
 const rightArrow = document.querySelector('.right-arrow');
 
-const scrollAmount = 200; 
+const scrollAmount = 100; 
 
 function scrollLeft() {
   containerBox.scrollBy({
