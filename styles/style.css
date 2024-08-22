@@ -474,12 +474,12 @@ button:hover {
 }
 
 .footer-section h2 {
-  color: #ff6f00;
+  color: black;
   font-size: 1.5rem;
   margin-bottom: 1rem;
   text-align: left;
   width: 100%;
-  font-family:  "Jorgey", sans-serif;;
+  font-family:  "Jorgey", sans-serif;
 }
 
 .footer-section a{
@@ -561,6 +561,12 @@ button:hover {
 
 .footer-links a:hover {
   text-decoration: underline;
+}
+
+.footer-bottom .footer-links h4 {
+  font-size: .8rem;
+  color: white;
+  font-family:  "Jorgey", sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -1157,12 +1163,14 @@ button:hover {
   }
 
   .patties-items-container{
-    height: 154rem;
+    height: 159rem;
   }
 
   .meal-info {
     padding: 10px;
     margin: 10px 0;
+    margin-bottom: 7rem;
+  
   }
 
   .meal-header {
@@ -1174,6 +1182,7 @@ button:hover {
     display: block;
     overflow-x: auto;
     white-space: nowrap;
+    margin-bottom: 4rem;
   }
 
 
