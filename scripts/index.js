@@ -4,26 +4,22 @@ document.getElementById('menu-icon').addEventListener('click', function(){
 })
 
 
-// ingredients scroll section
-const containerBox = document.querySelector('.container-box');
+JavaScript
 const leftArrow = document.querySelector('.left-arrow');
 const rightArrow = document.querySelector('.right-arrow');
+const containerBox = document.querySelector('.container-box');
 
-const scrollAmount = 100; 
+leftArrow.addEventListener('click', () => {
+  const currentScrollPosition = containerBox.scrollLeft;
+  if (currentScrollPosition > 0) {
+    containerBox.scrollBy({ left: -200, behavior: 'smooth' }); 
+  }
+});
 
-function scrollLeft() {
-  containerBox.scrollBy({
-    left: -scrollAmount,
-    behavior: 'smooth'
-  });
-}
-
-function scrollRight() {
-  containerBox.scrollBy({
-    left: scrollAmount,
-    behavior: 'smooth'
-  });
-}
-
-leftArrow.addEventListener('click', scrollLeft);
-rightArrow.addEventListener('click', scrollRight);
+rightArrow.addEventListener('click', () => {
+  const maxScrollPosition = containerBox.scrollWidth - containerBox.clientWidth;
+  const currentScrollPosition = containerBox.scrollLeft;
+  if (currentScrollPosition < maxScrollPosition) {
+    containerBox.scrollBy({ left: 200, behavior: 'smooth' });
+  }
+});
