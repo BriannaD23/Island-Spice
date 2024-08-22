@@ -169,7 +169,6 @@ header {
 /*---------------------------------------Ingredients---------------------------------------*/
 .container {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .ingredients {
@@ -184,7 +183,7 @@ header {
 
 .container-box-wrapper {
   position: relative;
-  width: 60%;
+  width: 40%;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -196,7 +195,9 @@ header {
   align-items: center;
   scroll-behavior: smooth;
   overflow-x: auto;
+ 
 }
+
 
 .scroll-arrow {
   border: none;
@@ -217,11 +218,12 @@ header {
 
 .right-arrow {
   right: 10px;
+
 }
 
 .ingredients-text p {
   font-family: "Jorgey", sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 1.5;
 }
 
@@ -231,7 +233,7 @@ header {
   align-items: center;
   text-align: center;
   padding: 15px;
-  min-width: 150px;
+  min-width: 200px;
   transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
   z-index: 1;
 }
@@ -243,47 +245,13 @@ header {
 }
 
 .container-img img {
-  height: 6rem;
+  height: 8rem;
 }
 
 .text {
   font-family: "Jorgey", sans-serif;
   text-align: center;
 }
-
-@media (max-width: 768px) {
-  .container-box-wrapper {
-    width: 80%;
-  }
-
-  .scroll-arrow {
-    font-size: 20px;
-  }
-
-  .ingredients {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .container-box-wrapper {
-    width: 100%;
-  }
-
-  .c-mainbox {
-    min-width: 120px;
-  }
-
-  .scroll-arrow {
-    font-size: 18px;
-  }
-
-  .ingredients {
-    font-size: 1.2rem;
-    padding: 10px;
-  }
-}
-
 
 
 /*---------------------------------------Specials---------------------------------------*/
@@ -1201,7 +1169,7 @@ button:hover {
   .meal-info {
     padding: 10px;
     margin: 10px 0;
-    margin-bottom: 7rem;
+    margin-bottom: px;
   
   }
 
