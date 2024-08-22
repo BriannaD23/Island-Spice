@@ -373,6 +373,10 @@ header {
   box-sizing: border-box;
 }
 
+.testimonial-container{
+  gap: 2.3rem;
+}
+
 .testimonial:hover {
   animation: hoverEffect 0.3s ease-in-out forwards;
 }
@@ -925,6 +929,16 @@ button:hover {
     font-size: 20px;
     font-weight: 600;
   }
+
+  /* --------------------------------Testimonials------------------------------- */
+
+  .testimonial-container{
+    gap: 2rem;
+  }
+
+
+
+
   /* -------------------------------------Entrees--------------------------------------------- */
 
   .entree-items-container{
@@ -1039,6 +1053,15 @@ button:hover {
     font-size: 20px;
     font-weight: 600;
   }
+
+
+
+
+  .testimonial-container{
+    gap: 3.2rem;
+  }
+
+
   /* -------------------------------------Entrees--------------------------------------------- */
 
   .entree-items-container{
@@ -1241,6 +1264,14 @@ button:hover {
     font-family: "Jorgey", sans-serif;
     text-align: center;
     font-size: 13px;
+  }
+
+
+  .blockquote img {
+    height: 3rem;
+  }
+  .blockquote{
+    font-size: 14px;
   }
   
 /*-----------------------------------------About.html----------------------------------- */
