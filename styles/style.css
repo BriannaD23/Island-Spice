@@ -169,6 +169,7 @@ header {
 /*---------------------------------------Ingredients---------------------------------------*/
 .container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .ingredients {
@@ -183,7 +184,7 @@ header {
 
 .container-box-wrapper {
   position: relative;
-  width: 40%;
+  width: 60%;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -195,9 +196,7 @@ header {
   align-items: center;
   scroll-behavior: smooth;
   overflow-x: auto;
- 
 }
-
 
 .scroll-arrow {
   border: none;
@@ -218,12 +217,11 @@ header {
 
 .right-arrow {
   right: 10px;
-
 }
 
 .ingredients-text p {
   font-family: "Jorgey", sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.5;
 }
 
@@ -233,7 +231,7 @@ header {
   align-items: center;
   text-align: center;
   padding: 15px;
-  min-width: 200px;
+  min-width: 150px;
   transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
   z-index: 1;
 }
@@ -245,13 +243,47 @@ header {
 }
 
 .container-img img {
-  height: 8rem;
+  height: 6rem;
 }
 
 .text {
   font-family: "Jorgey", sans-serif;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .container-box-wrapper {
+    width: 80%;
+  }
+
+  .scroll-arrow {
+    font-size: 20px;
+  }
+
+  .ingredients {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-box-wrapper {
+    width: 100%;
+  }
+
+  .c-mainbox {
+    min-width: 120px;
+  }
+
+  .scroll-arrow {
+    font-size: 18px;
+  }
+
+  .ingredients {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+}
+
 
 
 /*---------------------------------------Specials---------------------------------------*/

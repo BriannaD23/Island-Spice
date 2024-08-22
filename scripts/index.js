@@ -9,34 +9,21 @@ const containerBox = document.querySelector('.container-box');
 const leftArrow = document.querySelector('.left-arrow');
 const rightArrow = document.querySelector('.right-arrow');
 
-function updateArrows() {
-  // Disable left arrow if at the start
-  if (containerBox.scrollLeft === 0) {
-    leftArrow.style.display = 'none';
-  } else {
-    leftArrow.style.display = 'block';
-  }
-
-  // Disable right arrow if at the end
-  if (containerBox.scrollWidth - containerBox.clientWidth === containerBox.scrollLeft) {
-    rightArrow.style.display = 'none';
-  } else {
-    rightArrow.style.display = 'block';
-  }
-}
+const scrollAmount = 200; 
 
 function scrollLeft() {
-  containerBox.scrollBy({ left: -200, behavior: 'smooth' });
-  setTimeout(updateArrows, 300); // Update after scrolling
+  containerBox.scrollBy({
+    left: -scrollAmount,
+    behavior: 'smooth'
+  });
 }
 
 function scrollRight() {
-  containerBox.scrollBy({ left: 200, behavior: 'smooth' });
-  setTimeout(updateArrows, 300); // Update after scrolling
+  containerBox.scrollBy({
+    left: scrollAmount,
+    behavior: 'smooth'
+  });
 }
 
-// Initial check to disable arrows if needed
-updateArrows();
-
-// Add event listener to update arrows when scrolling
-containerBox.addEventListener('scroll', updateArrows);
+leftArrow.addEventListener('click', scrollLeft);
+rightArrow.addEventListener('click', scrollRight);
